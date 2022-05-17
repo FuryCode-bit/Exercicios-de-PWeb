@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        table, th, td {
+           border: 1px solid black;
+        }
+     </style>
+
+    <title>Oito Dois</title>
+</head>
+<body>
+    <table>
+        <thead>
+          <tr>
+            <th>n</th>
+            <th>n</th>
+            <th>n</th>
+            <th>n</th>
+            <th>n</th>
+            <th>n</th>
+            <th>n</th>
+            <th>n</th>
+            <th>n</th>
+            <th>n</th>
+            <th>n</th>
+            <th>n</th>
+            <th>n</th>
+            <th>n</th>
+            <th>n</th>
+            <th>n</th>
+            <th>n</th>
+            <th>n</th>
+            <th>n</th>
+            <th>n</th>
+            <th>n</th>
+            <th>n</th>
+            <th>n</th>
+            <th>n</th>
+            <th>n</th>
+            <th>n</th>
+            <th>n</th>
+            <th>n</th>
+            <th>n</th>
+            <th>n</th>
+            <th>n</th>
+            <th>n</th>
+            <th>n</th>
+            <th>n</th>
+            <th>n</th>
+            <th>n</th>
+            <th>n</th>
+            <th>n</th>
+            <th>n</th>
+            <th>n</th>
+            <th>n</th>
+            <th>n</th>
+            <th>n</th>
+            <th>n</th>
+            <th>n</th>
+            <th>n</th>
+            <th>n</th>
+            <th>n</th>
+            <th>n</th>
+            <th>n</th>
+          </tr>
+         </thead>
+         <tbody>
+            <tr>
+                {% for num in array %}
+                    <td>{{ num }}</td>
+                {% endfor %} 
+            </tr>
+        </tbody>
+      </table>
+
+      <div class="btns" style="margin-top: 25px;">
+        <form action="/oitoTres2" method="post">
+            <button name="shuffleBtn" type="submit">Print</button>
+        </form>
+      </div>
+</body>
+</html>
