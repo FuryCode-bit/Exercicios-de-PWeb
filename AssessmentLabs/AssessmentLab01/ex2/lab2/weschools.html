@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<style>
+
+
+input, textarea, select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+
+input[type=submit] {
+  width: 10%;
+  background-color: #0bffeb;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #ff3ee5;
+}
+
+div {
+    margin: 5% 15% 0 15%;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 30px;
+}
+</style>
+<body>
+
+<div>
+  <form>
+    <label for="fname">Primeiro Nome</label>
+    <input type="text" id="fname" name="firstname" placeholder="Digite o seu nome">
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="Digite o seu email">
+
+    <label for="country">País</label>
+    <select id="country" name="country">
+      <option value="portugal">Portugal</option>
+      <option value="china">Canada</option>
+      <option value="nota">Só gostava de ter acima de 19</option>
+    </select>
+
+    <label class="label" for="message">História</label>
+    <textarea class="textarea" cols="50" id="message" name="message" rows="4" style="resize: none;" placeholder="Conte-nos a sua melhor história!"></textarea>
+  
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>

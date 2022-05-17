@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./static/style/lab1.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/5d8077a28d.js" crossorigin="anonymous"></script>
+
+    <title>Programação Web | HTML </title>
+</head>
+<body>
+    <header>
+        <div class="mask">
+            <h1>PROGRAMAÇÃO WEB | HTML</h1>
+            <p style="font-weight: 50; font-size: 20px;">Marco Bernardes</p>
+          </div>
+      </header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navbar">
+        <a class="navbar-brand" href="#" ></a>
+        <i class='fab fa-html5' style='font-size:24px; color:white;'></i>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" href="#AprenderHTML" style="margin-left: 5px;">Aprender HTML</a>
+            <a class="nav-item nav-link" href="#tutoriais">Tutoriais</a>
+            <a class="nav-item nav-link" href="#dicasHTML">Dicas</a>
+            <a class="nav-item nav-link" href="#formHTML">Contacte-nos</a>
+          </div>
+        </div>
+      </nav>
+
+      <div class="d-table" style="padding-left: 30px;">
+        <div class="d-row">
+            <div class="d-cell first">
+                <h2 id="AprenderHTML" class="learnTitle" style="margin-top: 20px;">Aprender HTML</h2>
+                <div style="display:flex">
+                    <img style="margin-top: 5px;" class="img" src="https://www.hostinger.com.br/tutoriais/wp-content/uploads/sites/12/2018/11/Como-linkar-css-no-html.png" alt="HTML" width="300">
+                    <p style="padding-top: 50px; padding-left: 5px;">
+                        Desenvolvimento de uma página HTML. <br> Siga as dicas abaixo indicadas para a construção deste website.
+                    </p>
+                </div>
+            </div>
+            <div class="d-cell second">
+                <h2 id="tutoriais" class="learnTitle">Tutoriais de HTML</h2>
+                <iframe style="padding:5px; margin-bottom: -20px;" width="560" height="315" src="https://www.youtube.com/embed/9Ov41bcjeIc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="d-row">
+            <div class="d-cell first">
+                <h2 id="dicasHTML" class="learnTitle" style="margin-top: -80px;">Dicas HTML</h2>
+                <ul id="menu">
+                    <li> A imagem do header foi criada em <a href="https://www.canva.com/">www.canva.com</a></li>
+                    <li>Podem obter uma palete de cores através de aplicações online, como por exemplo <a href="http://www.colourco.de/">www.colourco.de</a>
+                    <li>O Menu deverá ser feito através de uma lista não ordenada. Para ter o aspeto pretendido devem atribuir os seguintes eslos:</li>    
+                        <ul>
+                            <li>display: inline</li>
+                            <li>list-style-type: none</li>
+                            <li>text-decoraon:none</li>
+                        </ul>
+                    </li>
+                    <li>Aprender HTML / Dicas e os Tutoriais deverão estar inseridos em uma tabela 2x2. A coluna Dicas deverá ocupar 70% da largura da
+                        página. A coluna Tutoriais deve ocupar 2 linhas.</li>
+                    <li>Os Tutoriais são iframes com vídeos do youtube</li>
+                    <li>O formulário de contacto está inserido num div. Deverá atribuir ao div os seguintes eslos:
+                        <ul>
+                            <li>background-color: whitesmoke</li>
+                            <li>padding-left:100</li>
+                            <li>padding-top:30</li>
+                        </ul>
+                    </li>
+                    <li>Os inputs do formulário deverão ter uma class associada que tenha a seguinte configuração:
+                        <ul>
+                            <li>width: 40%</li>
+                            <li>line-height: 30px</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="d-cell first">
+                <iframe style="padding:5px; margin-bottom: -315px;" width="560" height="315" src="https://www.youtube.com/embed/Rgx8dpiPwpA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+     </div>
+     <div class="form-div" style="background-color: whitesmoke;">
+        <h2 id="formHTML" class="formTitle" style="padding-left: 100px; padding-top: 30px; font-weight: 700;">Contacte-nos</h2>
+        <h4 class="formTitle" style="padding-left: 100px; padding-top: 10px; font-weight: 700;">Envie-nos a sua dúvida ou sugestão</h4>
+        <form>
+            <label id="label" for="fname">Nome</label><br>
+            <input type="text" id="fname" placeholder="Insira o seu nome!"><br>
+            <label id="label" for="lname">Email</label><br>
+            <input type="text" id="lname" placeholder="Insira o seu email!"><br>
+            <label id="label" for="lname">Telefone</label><br>
+            <input type="text" id="lname" placeholder="Insira o seu número!"><br>
+            <label id="label" for="subject">Mensagem</label><br>
+            <textarea id="subject" name="subject" placeholder="Indique-nos a sua dúvida!"></textarea><br>
+            <label id="label" for="contact_select">Qual a razão do seu contacto?</label><br>
+            <select id="contact_select" name="cars">
+                <option value="Information">Pedido de Informação</option>
+                <option value="Whatever">Whatever</option>
+                <option value="Wee dont care">We dont care</option>
+                <option value="Só quero um 20 no final do semestre">Só quero um 20 no final do semestre</option>
+            </select><br><br>
+            <label>Como prefere ser contactado: </label><br>
+            <input type="checkbox" id="Telefone" name="horns">
+            <label for="Telefone">Telefone</label><br>
+            <input type="checkbox" id="Email" name="horns">
+            <label for="Email">Email</label><br><br>
+
+            <label for="start">Start date:</label>
+
+            <input type="datetime-local" id="start" name="meeting-time"
+                value="dd-mm-aaaaT00:00"
+                min="01-01-2000T00:00" max="12-03-2022T00:00"><br><br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Cancel">
+        </form>
+     </div>
+     <footer>
+        <div class="row">
+            <div class="column" id="left">
+                <p class="text" id="left" >Marco Bernardes a45703</p>
+            </div>
+            <div class="column" id="center">
+                <p class="text" id="center">Copyright © 2022</p>
+            </div>
+            <div class="column" id="right">
+                <p id="right">Find me on: <br>
+                    <a href="https://www.instagram.com/mark0bernardes/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/marco-bernardes-5b6a62198/"><i class="fa-brands fa-linkedin"></i></a>
+                </p>
+            </div>
+          </div>
+     </footer>
+</body>
+</html>

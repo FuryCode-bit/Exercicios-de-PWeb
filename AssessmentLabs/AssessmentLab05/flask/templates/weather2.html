@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Programação Web - API Management</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body>
+    <section class="hero is-primary is-bold">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">
+                    Digite um nome de uma cidade!
+                </h1>
+            </div>
+        </div>
+    </section>
+    <section class="section" id="main" style="justify-content: center; align-items: center;">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-offset-4 is-4">
+                    <form method="POST" class="inputForm">
+                        <div class="field has-addons" id="input">
+                            <div class="control is-expanded">
+                                <input class="input" id="input" name="city" type="text" placeholder="City Name" style="text-transform: capitalize;">
+                            </div>
+                            <div class="control">
+                                <button class="button is-info" id="inputBtn" type="submit">
+                                    Submit
+                                </button>
+                            </div>
+                        </div>
+                        {% with messages = get_flashed_messages(with_categories=true) %}
+                        {% if messages %}
+                            {% for category, message in messages %}
+                                {% set message_class = 'is-success' %}
+
+                                {% if category == 'error' %}
+                                    {% set message_class = 'is-danger' %}
+                                {% endif %}
+                                <div class="notification {{ message_class }}">{{ message }}</div>
+                            {% endfor %}
+                        {% endif %}
+                        {% endwith %}
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer" style="position: fixed; bottom: 0; width: 100%; height: 40px;">
+        <div class="container">
+            <div class="content has-text-centered">
+                <a href="https://github.com/FuryCode-bit"><i class="fa fa-github" style="font-size:36px"></i></a>.
+                <a href="https://www.linkedin.com/in/bernardeswebdev/"><i class="fa fa-linkedin" style="font-size:36px"></i></a>.
+            </div>
+          </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Javascript - Exercício 5</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<style>
+	#divbox {
+		width:200px;
+		height:200px;
+		background-color:blue;
+		display:none;
+	}
+	#divgame {
+		width:800px;
+		height:500px;
+		border:2px black solid;
+		margin:auto;
+	}
+</style>
+</head>
+<body onload=makebox()>
+
+<h1>Jogo - Tempo de reação</h1>
+
+   <h2>Record: <span id="recordTime"><span></h2>
+   <p>Tempo de reação: <span id="reactionTime"><span></p>
+   <div id="divgame">
+   <div id="divbox" onclick="validate()"></div>
+   </div>
+   <script>
+	    let clickTime = 0;
+		let reaction = 69420;
+		let buildTime = 0;
+
+		function randomShape() {
+			const randomNumber = Math.floor(Math.random() * 2);
+			return randomNumber;
+		}
+
+		function makebox() {
+			const shape = randomShape();
+			const block = document.getElementById("divbox");
+			
+			if(shape == 1) {
+				block.style.borderRadius = "0px"
+			} else {
+				block.style.borderRadius = "999px";
+			}
+			
+			block.style.display = "block";
+
+			block.style.marginLeft = Math.floor(Math.random() * 600) + "px";
+			block.style.marginTop = Math.floor(Math.random() * 300) + "px";
+
+			const colorR = Math.floor(Math.random() * 256);
+			const colorG = Math.floor(Math.random() * 256);
+			const colorB = Math.floor(Math.random() * 256);
+
+			block.style.backgroundColor = "rgb(" + colorR + "," + colorG + "," + colorB + ")";
+			buildTime = Date.now();
+		}
+
+		function validate(){
+			clickTime = Date.now();
+			const timeDifference = (clickTime - buildTime) / 1000;
+			if(timeDifference < reaction) {
+				reaction = timeDifference;
+				document.getElementById("recordTime").innerHTML = reaction + "ms" + " Novo Recorde!";
+			}   else{
+				document.getElementById("recordTime").innerHTML = reaction + "ms";
+			}
+			document.getElementById("reactionTime").innerHTML = timeDifference + " ms";
+			clickTime = 0;
+
+			const block = document.getElementById("divbox");
+			block.style.display = "none";
+			makebox();
+		}
+   </script>
+
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+body {
+    font-family: Times;
+    font-size: 13px;
+    color: #222;
+    margin: auto;
+    width: 50%;
+}
+
+header,
+.label.actual {
+    background-color: #A60015;
+    color: white;
+}
+
+article {
+    text-align: justify;
+    display: inline-block;
+    width: 100%;
+    padding: 10px 0;
+    border-bottom: 1px gray solid;
+}
+
+article>p {
+    font-style: italic;
+}
+
+img {
+    width: 50%;
+    margin: 0;
+    float: left;
+}
+
+a {
+    color: red;
+}
+
+a[href="howdy.com"]{
+    text-decoration: none;
+    color: #405DE6	;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-family: Arial;
+}
+
+
+img+h2 {
+    float: right;
+    margin-top: 0;
+    width: 45%;
+}
+
+img~p {
+    text-align: justify;
+    margin-left: 55%;
+}
+
+.autor {
+    color: #444;
+    font-size: 11px;
+    font-family: Helvetica;
+    font-style: italic;
+}
+
+.principal img {
+    width: 100%;
+}
+
+.label {
+    text-transform: uppercase;
+    padding: 1px 4px 2px;
+    font-size: 10px;
+    font-family: Verdana, sans-serif;
+    color: red;
+    font-style: normal;
+}
+
+.instagram {
+    color: #405DE6	;
+}
+
+.principal h2 {
+    font-size: 30px;
+}
+
+.principal>p {
+    font-family: Georgia, serif;
+    font-size: 14px;
+}
+
+#scandal {
+    background-color: gainsboro;
+}
+
+span.especial {
+    color: #405DE6;
+}
+
+

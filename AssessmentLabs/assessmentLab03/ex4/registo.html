@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <head>
+        <title>Registo</title>
+
+        <style>
+            body{
+                font-family: 'Open Sans';
+                font-size: 18px;
+                background-color: #ffffff;
+                margin: 20px;
+                line-height: 1.5;
+            }
+        </style>
+        <script>
+            function registo(){
+                
+            let number = prompt("Insira o número de registos que pretende criar");
+            let array = [];
+
+            for(let i = 0; i < number; i++){
+                let name = prompt("Insira o nome do user");
+                let age = prompt("Insira a idade do user");
+
+                let users = {
+                    name: name,
+                    age: parseInt(age)
+                }
+                array.push(users);
+            }
+            document.getElementById("Num").innerHTML = document.getElementById("Num").innerHTML + array.length;
+            
+            var maior = 0;
+            for(let i = 0; i < array.length; i++){
+                if(array[i].age > maior){
+                    maior = array[i].age;
+                }
+            }
+            document.getElementById("Max").innerHTML = document.getElementById("Max").innerHTML + maior;
+            
+            let menor = 999999;
+            for(let i = 0; i < array.length; i++){
+                if(array[i].age < menor){
+                    menor = array[i].age;
+                }
+            }
+            document.getElementById("Min").innerHTML = document.getElementById("Min").innerHTML + menor;
+
+
+            let soma = 0;
+            for(let i = 0; i < array.length; i++){
+                soma += array[i].age;
+            }
+
+            let average = soma / array.length;
+            document.getElementById("Avg").innerHTML = document.getElementById("Avg").innerHTML + average;
+        }
+        </script>
+    </head>
+    <body>
+        <h1>Idades</h1>
+        <div id="data">
+            <label id="Num">Número de praticipantes: </label> <br>
+            <label id="Avg">Média de Idades: </label> <br>
+            <label id="Min">Idade minima: </label> <br>
+            <label id="Max">Idade máxima: </label> <br>
+        </div>
+        <input type="button" value="Registo" onclick="registo()">
+    </body>
+</html>

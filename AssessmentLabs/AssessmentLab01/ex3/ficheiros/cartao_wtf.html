@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../index.css">
+
+    <title>Cartão WTF</title>
+</head>
+<body>
+    <body>
+        <h1>Adesão Cartão WTF</h1>
+        <form style="width:70%">
+            <fieldset>
+                <legend><b>Dados pessoais:</b></legend>
+                Nome: <input type="text" name="nome" size="80" required="">
+                <br><br> Sexo:
+                <input type="radio" name="gender" value="male" checked=""> Masculino
+                <input type="radio" name="gender" value="female">Feminino
+                <input type="radio" id="gender" value="other"> Other<br>
+                <br> Data de Nascimento:
+                <input type="date" name="nascimento" data-form-type="date">
+                <br><br> Distrito de Proveniência:
+                <select name="district" >
+                    <option>Distrito de Aveiro</option>
+                    <option>Distrito de Beja</option>
+                    <option>Distrito de Braga</option>
+                    <option>Distrito de Bragança</option>
+                    <option>Distrito de Castelo Branco</option>
+                    <option>Distrito de Coimbra</option>
+                    <option>Distrito de Évora</option>
+                    <option>Distrito de Faro</option>
+                    <option>Distrito de Guarda</option>
+                    <option>Distrito de Leiria</option>
+                    <option>Distrito de Lisboa</option>
+                    <option>Distrito de Portalegre</option>
+                    <option>Distrito de Porto</option>
+                    <option>Distrito de Santarém</option>
+                    <option>Distrito de Setúbal</option>
+                    <option>Distrito de Viana do Castelo</option>
+                    <option>Distrito de Vila Real</option>
+                    <option>Distrito de Viseu</option>
+                    <option>Ilha do Corvo</option>
+                    <option>Ilha das Flores</option>
+                    <option>Ilha do Faial</option>
+                    <option>Ilha Graciosa</option>
+                    <option>Ilha do Pico</option>
+                    <option>Ilha Terceira</option>
+                    <option>Ilha de São Jorge</option>
+                    <option>Ilha de São Miguel</option>
+                    <option>Ilha de Santa Maria</option>
+                    <option>Ilha da Madeira</option>
+                  </select>
+            </fieldset>
+            <br><br>
+            <fieldset>
+                <legend><b>Contactos:</b></legend>
+ 
+                Código-Postal:
+                <input type="text" name="indicative" placeholder="0000" pattern="[0-9]{4}" size="4"> -
+                <input type="text" name="extension" placeholder="000" pattern="[0-9]{3}" size="3">
+                
+                <br><br>Morada:
+                <br>
+                <textarea id="address" rows="4" cols="99" style="resize: none;"></textarea>
+
+                <br><br><label for="entrance">De que regime chegou:</label>
+                <select id="entrance">
+                    <option>regime geral</option>
+                    <option>maiores de 23</option>
+                    <option>titulares de CET</option>
+                    <option>transferência</option>
+                    <option>mudança de curso</option>
+                    <option>ano zero</option>
+                    <option>curso livre</option>
+                </select><br><br>
+
+                <label for="option">Em que opção entrou </label><br>
+                <input type="radio" id="option" value="firstOption"> Primeira Opção<br>
+                <input type="radio" id="option" value="other"> Outra<br><br>
+
+            </fieldset>
+            <div style="text-align:right">
+                <small><i>Pretendo ser contactado através de:</i>
+                    <input type="checkbox" name="contactos">Email &nbsp;
+                    <input type="checkbox" name="contactos">Telemóvel &nbsp;
+                    <input type="checkbox" name="contactos">Correio
+                </small><br><br>
+
+                <input type="reset" value="Limpar">
+                <input type="submit" value="Confirmar">
+            </div>
+        </form>
+    </body>
+</body>
+</html>

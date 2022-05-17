@@ -1,0 +1,22 @@
+body {
+    font-family: Calibri;
+}
+
+h1 {
+    font-family: Calibri;
+    color: #ff3399;
+}
+
+h4 {
+    font-family: Calibri;
+    color: #ff3399;
+}
+
+td .center{
+    text-align: center;
+}
+
+p {
+    font-family: Calibri;
+    font-weight: bold;
+}

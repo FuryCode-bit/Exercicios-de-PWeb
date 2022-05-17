@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./form.css">
+
+    <title>Formulário</title>
+</head>
+<body>
+    <form>
+        <label for="name">Nome do aluno</label><br>
+        <input type="text" id="name" placeholder="Mike"><br><br>
+        <label for="district">Distrito de Proveniência</label><br>
+        <select id="district" name="districts">
+            <option>Distrito de Aveiro</option>
+            <option>Distrito de Beja</option>
+            <option>Distrito de Braga</option>
+            <option>Distrito de Bragança</option>
+            <option>Distrito de Castelo Branco</option>
+            <option>Distrito de Coimbra</option>
+            <option>Distrito de Évora</option>
+            <option>Distrito de Faro</option>
+            <option>Distrito de Guarda</option>
+            <option>Distrito de Leiria</option>
+            <option>Distrito de Lisboa</option>
+            <option>Distrito de Portalegre</option>
+            <option>Distrito de Porto</option>
+            <option>Distrito de Santarém</option>
+            <option>Distrito de Setúbal</option>
+            <option>Distrito de Viana do Castelo</option>
+            <option>Distrito de Vila Real</option>
+            <option>Distrito de Viseu</option>
+            <option>Ilha do Corvo</option>
+            <option>Ilha das Flores</option>
+            <option>Ilha do Faial</option>
+            <option>Ilha Graciosa</option>
+            <option>Ilha do Pico</option>
+            <option>Ilha Terceira</option>
+            <option>Ilha de São Jorge</option>
+            <option>Ilha de São Miguel</option>
+            <option>Ilha de Santa Maria</option>
+            <option>Ilha da Madeira</option>
+        </select><br><br>
+
+        <label for="gender">Género</label><br>
+        <input type="radio" id="gender" value="male"> Male<br>
+        <input type="radio" id="gender" value="female"> Female<br>
+        <input type="radio" id="gender" value="other"> Other<br><br>
+
+        <label for="indicatives">Código Postal</label><br>
+        <input type="number" id="indicatives"  min="0000" max="9999" pattern="[0-9]{4}" size="4" placeholder="0000">
+        <label for="extension">-</label>
+        <input type="number" id="extension" min="000" max="999" pattern="[0-9]{3}" size="3" placeholder="000"><br><br>
+
+        <label for="address">Morada</label><br>
+        <textarea id="address" rows="4" cols="50" style="resize: none;"></textarea><br><br>
+        
+        <label for="entrance">De que regime chegou</label><br>
+        <select id="entrance">
+            <option>regime geral</option>
+            <option>maiores de 23</option>
+            <option>titulares de CET</option>
+            <option>transferência</option>
+            <option>mudança de curso</option>
+            <option>ano zero</option>
+            <option>curso livre</option>
+        </select><br><br>
+        
+        <label for="option">Em que opção entrou </label><br>
+        <input type="radio" id="option" value="firstOption"> Primeira Opção<br>
+        <input type="radio" id="option" value="other"> Outra<br><br>
+
+        <input type="submit" value="Submit">
+        <input class="reset" type="reset" value="Clear">
+      </form>
+</body>
+</html>

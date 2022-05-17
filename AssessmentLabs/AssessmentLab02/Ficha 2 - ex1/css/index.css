@@ -1,0 +1,152 @@
+        /*------ PASSO 1: Propriedades gerais de layout ---- */
+
+        body {
+            font: 14px Arial;
+            color: #000;
+        }
+
+        #exterior {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        #menu {
+            float: left;
+            width: 20%;
+        }
+
+        #conteudo {
+            float: right;
+            width: 78%;
+        }
+
+        #principal {
+            float: left;
+            width: 73%;
+        }
+
+        #secundario {
+            float: right;
+            width: 22%;
+        }
+
+        #cabecalho,
+        #navegacao,
+        #rodape {
+            clear: both;
+        }
+        /* --- Começar a editar ----- */
+        /* -------  PASSO 2: CABEÇALHO -------- */
+
+        #cabecalho {
+            padding: 0.5em;
+        }
+
+        #cabecalho h1 {
+            color: #C60;
+        }
+        /* -------  PASSO 3: Navegação -------- */
+
+        #navegacao {
+            background: #4286f4;
+            padding: 0.2em 0;
+        }
+
+        #navegacao a {
+            padding: 0.5em;
+            color: white;
+            text-decoration: none;
+        }
+
+        #navegacao a:hover {
+            color: orange;
+            text-decoration: underline;
+        }
+        /* -------  PASSO 4: Menu -------- */
+
+        #menu {
+            padding: 0;
+            font-size: 0.9em;
+        }
+        /* ------ PASSO 4.1 Favoritos ------ */
+
+        #menu #favoritos {
+            padding: 5px;
+            margin-top: 1em;
+            border: 1px solid #C5C5C5;
+            background: #F8F8F8;
+        }
+
+        #menu #favoritos h3 {
+            color: #036;
+        }
+
+        .fav {
+            display: block;
+            color: #999;
+        }
+        /* -------- PASSO 4.2 Grupos---------- */
+
+        #menu #grupos h3 {
+            color: #036;
+        }
+
+        #menu #grupos {
+            padding: 5px;
+            margin-top: 0.5em;
+            border: 1px dashed #C60;
+            background: #FFF6CD;
+        }
+
+        #menu #grupos a {
+            color: #C60;
+            padding-left: 5px;
+        }
+        /* -------- PASSO 5: Conteudo principal --------- */
+
+        #conteudo h2 {
+            color: #C60;
+        }
+
+        .artigo {
+            margin-bottom: 1em;
+        }
+
+        .artigo p {
+            text-align: justify;
+        }
+
+        .artigo a {
+            color: #C60;
+        }
+        /* ------ PASSO 6: Conteudo Secundario ------- */
+
+        #secundario {
+            margin: 0.2em 0;
+        }
+
+        #secundario h2 {
+            background: #DB905C;
+            padding: .2em;
+            font-size: 1em;
+            color: #FFF;
+        }
+
+        #secundario p {
+            margin: .2em 0;
+            padding: 0px 5px;
+        }
+        /* ------ PASSO 7: Rodapé ------- */
+
+        #rodape {
+            padding: .1em 0;
+            margin-top: 1em;
+            border-top: 1px solid #C5C5C5;
+            border-bottom: 1px solid #C5C5C5;
+            background: #F8F8F8;
+        }
+
+        #rodape p {
+            text-align: right;
+            font-size: .8em;
+        }

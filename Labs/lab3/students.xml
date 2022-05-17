@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<students>
+    <student>
+        <name>Ana Silva</name>
+        <SudentNumber>A12345</SudentNumber>
+        <examOne>15</examOne>
+        <examTwo>17</examTwo>
+    </student>
+    <student>
+        <name>Mário Fonseca</name>
+        <SudentNumber>A54321</SudentNumber>
+        <examOne>11</examOne>
+        <examTwo>7</examTwo>
+    </student>
+    <student>
+        <name>António Abreu </name>
+        <SudentNumber>A44556</SudentNumber>
+        <examOne>14</examOne>
+        <examTwo>13</examTwo>
+    </student>
+    <student>
+        <name>Amélia Lourenço</name>
+        <SudentNumber>A85734</SudentNumber>
+        <examOne>8</examOne>
+        <examTwo>12</examTwo>
+    </student>
+    <student>
+        <name>Alice Guedes</name>
+        <SudentNumber>A33321</SudentNumber>
+        <examOne>9</examOne>
+        <examTwo>6</examTwo>
+    </student>
+</students>

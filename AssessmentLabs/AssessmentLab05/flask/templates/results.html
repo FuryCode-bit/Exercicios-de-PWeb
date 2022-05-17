@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>What's the weather like?</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body>
+    <section class="hero is-primary is-bold" style="height: 60px;">
+        <!-- Title-->
+    </section>
+    <section class="section">
+        <div class="flex-container">
+            <div class="flex-child" style="width: 50%; float: left;">
+                <div class="row" style="display: flex;">
+                    <h1 style="font-size: 30px; font-weight: bold; padding: 30px;">
+                        {{ data.name }}
+                    </h1>
+                    <img src="http://openweathermap.org/img/w/{{ data.weather[0].icon }}.png" alt="Image" width="80px" height="80px">
+                </div>
+                <h3 style="font-size: 15px; font-weight: bold; padding-left: 30px; margin-top: -30px;">
+                    {{ data.weather[0].description }}
+                </h3>
+
+                <div class="flex-container" style="margin-top: 30px;">
+                    <div class="element" style="font-size: 20px; font-weight: 800; width: 30%; float: left; padding: 30px 50px 30px 30px;"><h1>Temp: {{ data.main["temp"] }}° C</h1></div>
+                    <div class="element" style="font-size: 20px; font-weight: bold; padding: 30px 50px 30px 30px;"><h1>Latitude: {{ data.coord["lat"] }}</h1></div>
+                    <div class="element" style="font-size: 20px; font-weight: bold; width: 30%; float: left; padding: 30px 50px 30px 30px;"><h1>Humidade: {{ data.main["humidity"] }}%</h1></div>
+                    <div class="element" style="font-size: 20px; font-weight: bold; padding: 30px 50px 30px 30px;"><h1>Longitude: {{ data.coord["lon"] }}</h1></div>
+                </div>
+                
+            </div>
+            <div class="flex-child">
+                <iframe class="frame", src="/map" width="450" height="500" style="margin-left: 50px;"></iframe>
+            </div>
+          </div>
+    </section>
+    <footer class="footer" style="height: 40px;">
+        <div class="container">
+            <div class="content has-text-centered">
+                
+                <a href="https://github.com/FuryCode-bit"><i class="fa fa-github" style="font-size:36px"></i></a>.
+              </p>
+            </div>
+          </div>
+    </footer>
+</body>
+
+</html>

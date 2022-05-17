@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+
+        table, th, td {
+          border: 1px solid black;
+        }
+        th, td {
+          width: 10%;
+          height: 22.5px;
+        }
+
+        td#links {
+            text-align: center;
+            font-size: 12px;
+        }
+        #Lquant {
+            display: inline-block;
+            text-align: right;
+        }
+    </style>
+
+    <title>Document</title>
+</head>
+<body>
+    <h2>EXERCÍCIO 1</h2>
+    <p>Replique a seguinte página, tendo em conta as considerações tecidas abaixo:</p>
+    
+    <table style="width:40%;">
+        <form action="">
+            <tr>
+            <th style="width:4.5%"></th>
+            <th></th> 
+            <th></th>
+            <th></th>
+            <th></th> 
+            <th></th>
+            <th></th>
+            <th></th> 
+            <th></th>
+            <th></th>
+            <th style="width:4.5%"></th> 
+            </tr>
+            <tr>
+            <td style="width:4.5%"></td>
+            <td></td>
+            <td rowspan="4">
+                <img src="./static/img/img.png" style="height: 90px; width: 40px;">
+            </td>
+            <td></td>
+            <td><input type="checkbox" id="A"></td>
+            <td><label for="A">A</label></td>
+            <td><input type="checkbox" id="B"></td>
+            <td><label for="B">B</label></td>
+            <td><input type="checkbox" id="C"></td>
+            <td><label for="C">C</label></td>
+            <td style="width:4.5%"></td>
+            </tr>
+            <tr>
+            <td style="width:4.5%"></td>
+            <td></td>
+            <td></td>
+            <td colspan="3"><label for="quant" id="Lquant" style="display: block; text-align: right; padding-right: 5px;">Quantidade</label></td>
+            <td colspan="3"><input type="text" id="quant" placeholder="quant" size="10"></td>
+            <td style="width:4.5%"></td>
+            </tr>
+            <tr>
+            <td style="width:4.5%"></td>
+            <td></td>
+            <td></td>
+            <td colspan="2">
+                <input type="radio" id="one">
+                <label for="one">Tipo 1</label>
+            </td>
+            <td colspan="2">
+                <input type="radio" id="two">
+                <label for="two">Tipo 2</label>
+            </td>
+            <td></td>
+            <td></td>
+            <td style="width:4.5%"></td>
+            </tr>
+            <tr>
+            <td style="width:4.5%"></td>
+            <td></td>
+            <td></td>
+            <td colspan="2">
+                <select class="form-control">
+                    <option>Opção 1</option>
+                    <option>Opção 2</option>
+                    <option>Opção 3</option>
+                    <option>Opção 4</option>
+                </select>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td style="width:4.5%"></td>
+            </tr>
+            <tr>
+            <td style="width:4.5%"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td style="width:4.5%"></td>
+            </tr>
+            <tr>
+            <td style="width:4.5%"></td>
+            <td colspan="2" rowspan="2">
+                <table>
+                    <tr>
+                        <td id="links">
+                            <a href="http://url.pt">url</a>
+                        </td>
+                        <td id="links">
+                            <a href="email@email.to.pt">email</a>
+                        </td>
+                   </tr>
+                </table>
+            </td>
+            <td></td>
+            <td colspan="6">
+                <input class="reset" type="reset" value="Apagar Tudo" style=" margin-left: 15px;width: 120px;">
+                <input type="submit" value="Carregar" style="width: 100px;">
+            </td>
+            <td style="width:4.5%"></td>
+            </tr>
+            <tr>
+            <td style="width:4.5%"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td style="width:4.5%"></td>
+            </tr>
+            <tr>
+            <td style="width:4.5%"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td style="width:4.5%"></td>
+            </tr>
+        </form>
+    </table>
+</body>
+</html>

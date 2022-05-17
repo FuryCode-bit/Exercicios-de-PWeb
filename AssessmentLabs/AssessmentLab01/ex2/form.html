@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./form.css">
+
+    <title>Formulário</title>
+</head>
+<body>
+    <div class="block">
+        <form>
+            <div class="field half">
+                <label for="name" class="label">Nome do aluno</label>
+                <input type="text" id="name" placeholder="Mike">
+            </div>
+            <div class="field half">
+                <label for="district" class="label">Distrito de Proveniência</label>
+                <select id="district" name="districts">
+                    <option>Distrito de Aveiro</option>
+                    <option>Distrito de Beja</option>
+                    <option>Distrito de Braga</option>
+                    <option>Distrito de Bragança</option>
+                    <option>Distrito de Castelo Branco</option>
+                    <option>Distrito de Coimbra</option>
+                    <option>Distrito de Évora</option>
+                    <option>Distrito de Faro</option>
+                    <option>Distrito de Guarda</option>
+                    <option>Distrito de Leiria</option>
+                    <option>Distrito de Lisboa</option>
+                    <option>Distrito de Portalegre</option>
+                    <option>Distrito de Porto</option>
+                    <option>Distrito de Santarém</option>
+                    <option>Distrito de Setúbal</option>
+                    <option>Distrito de Viana do Castelo</option>
+                    <option>Distrito de Vila Real</option>
+                    <option>Distrito de Viseu</option>
+                    <option>Ilha do Corvo</option>
+                    <option>Ilha das Flores</option>
+                    <option>Ilha do Faial</option>
+                    <option>Ilha Graciosa</option>
+                    <option>Ilha do Pico</option>
+                    <option>Ilha Terceira</option>
+                    <option>Ilha de São Jorge</option>
+                    <option>Ilha de São Miguel</option>
+                    <option>Ilha de Santa Maria</option>
+                    <option>Ilha da Madeira</option>
+                </select>
+            </div>
+            <div class="field half">
+                <label for="gender" class="label">Género</label><br>
+                <input type="radio" id="gender" value="male"> Male<br>
+                <input type="radio" id="gender" value="female"> Female<br>
+                <input type="radio" id="gender" value="other"> Other<br><br>
+            </div>
+            <div class="field half">
+                <label for="indicatives" class="label">Código Postal</label><br>
+                <input type="number" id="indicatives" size="4" min="0" max="9999" pattern="[0-9]{4}" placeholder="0000">
+                <label for="lastIndicatives" class="label">-</label>
+                <input type="number" id="lastIndicatives"  min="0" max="999" size="3" pattern="[0-9]{3}" placeholder="000"><br><br>
+            </div>
+                <label for="address" class="label">Morada</label><br>
+                <textarea id="address" rows="4" cols="50" style="resize: none;"></textarea><br><br>
+            <div class="field half">
+                <label for="entrance" class="label">De que regime chegou</label><br>
+            </div>
+            <div class="field half">
+                <select id="entrance">
+                    <option>regime geral</option>
+                    <option>maiores de 23</option>
+                    <option>titulares de CET</option>
+                    <option>transferência</option>
+                    <option>mudança de curso</option>
+                    <option>ano zero</option>
+                    <option>curso livre</option>
+                </select>
+            </div>
+            <label for="option" class="label">Em que opção entrou </label>
+            <input type="radio" id="option" value="firstOption"> Primeira Opção
+            <input type="radio" id="option" value="other"> Outra
+            </div>
+    
+            <input id="btnSubmit" type="submit" value="Submit">
+            <input id="btnReset" class="reset" type="reset" value="Clear">
+          </form>
+    </div>
+</body>
+</html>

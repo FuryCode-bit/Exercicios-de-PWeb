@@ -1,0 +1,10 @@
+form {
+    width: 80%;
+}
+
+form .field.half {
+    width: calc(50% - 1px); }
+
+form > .reset {
+    margin-left: 5px;
+}

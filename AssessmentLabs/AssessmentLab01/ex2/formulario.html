@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./test.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <form class="form">
+        <p class="field half">
+          <label class="label required" for="fname">Nome do aluno</label>
+          <input class="text-input" id="fname" name="name" required="true" type="text" placeholder="Mike"></input>
+        </p>
+        <p class="field half">
+                <label class="label" for="indicatives" style="margin-left: 15px;">Código Postal</label>
+                <input class="text-input" id="indicatives" name="number" required="true" type="number" size="4" min="0" max="9999" pattern="[0-9]{4}" placeholder="0000" style="width: 25%; margin-bottom: -53px; margin-left: 15px;"></input>
+                  <input class="text-input" id="indicatives" name="number" required="true" type="number" size="3" min="0" max="999" pattern="[0-9]{3}" placeholder="000" style="width: 25%; margin-left: 7em;"></input>
+        </p>
+        <div class="field half">
+          <label class="label">Género</label>
+          <ul class="checkboxes">
+              <li class="checkbox" style="padding-right: 15px;">
+                <input class="checkbox-input" type="radio" id="gender" value="male">
+                <label class="checkbox-label" for="choice">male</label>
+              </li>
+              <li class="checkbox" style="padding-right: 15px;">
+                <input class="checkbox-input" type="radio" id="gender" value="female">
+                <label class="checkbox-label" for="choice">female</label>
+              </li>
+              <li class="checkbox" style="padding-right: 15px;">
+                <input class="checkbox-input" type="radio" id="gender" value="other">
+                <label class="checkbox-label" for="choice">other</label>
+              </li>
+          </ul>
+        </div>
+        <div class="field half">
+          <label class="label" style="margin-left: 15px;">Distritos</label>
+          <ul class="options" style="margin-left: 15px;">
+              <li class="option">
+                    <select class="text-input" name="districts">
+                        <option>Distrito de Aveiro</option>
+                        <option>Distrito de Beja</option>
+                        <option>Distrito de Braga</option>
+                        <option>Distrito de Bragança</option>
+                        <option>Distrito de Castelo Branco</option>
+                        <option>Distrito de Coimbra</option>
+                        <option>Distrito de Évora</option>
+                        <option>Distrito de Faro</option>
+                        <option>Distrito de Guarda</option>
+                        <option>Distrito de Leiria</option>
+                        <option>Distrito de Lisboa</option>
+                        <option>Distrito de Portalegre</option>
+                        <option>Distrito de Porto</option>
+                        <option>Distrito de Santarém</option>
+                        <option>Distrito de Setúbal</option>
+                        <option>Distrito de Viana do Castelo</option>
+                        <option>Distrito de Vila Real</option>
+                        <option>Distrito de Viseu</option>
+                        <option>Ilha do Corvo</option>
+                        <option>Ilha das Flores</option>
+                        <option>Ilha do Faial</option>
+                        <option>Ilha Graciosa</option>
+                        <option>Ilha do Pico</option>
+                        <option>Ilha Terceira</option>
+                        <option>Ilha de São Jorge</option>
+                        <option>Ilha de São Miguel</option>
+                        <option>Ilha de Santa Maria</option>
+                        <option>Ilha da Madeira</option>
+                    </select>
+                </label>
+              </li>
+          </ul>
+        </div>
+        <p class="field">
+          <label class="label" for="message">Mensagem</label>
+          <textarea class="textarea" cols="50" id="message" name="message" rows="4" style="resize: none;"></textarea>
+        </p>
+        <p class="field half">
+          <label class="label" for="select">De que regime chegou</label>
+          <select class="select" id="select">
+            <option>regime geral</option>
+            <option>maiores de 23</option>
+            <option>titulares de CET</option>
+            <option>transferência</option>
+            <option>mudança de curso</option>
+            <option>ano zero</option>
+            <option>curso livre</option>
+          </select>
+        </p>
+        <p class="field half">
+          <input class="button" type="reset" value="Clear" style="margin-bottom: -53px;"></input>
+          <input class="button" type="submit" value="Send" style="margin-right: 150px; background-color: rgb(6, 154, 199);"></input>
+        </p>
+      </form>
+      
+</body>
+</html>

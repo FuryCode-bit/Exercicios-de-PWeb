@@ -1,0 +1,53 @@
+body {
+    background-image: url(https://itforum.com.br/wp-content/uploads/2019/11/Criador-da-web-Tim-Berners-Lee-lanca-plano-global-para-proteger-a-internet.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.block {
+    height: 600px;
+    width: 95%;
+    background-color: #1fcbffa9;
+    margin: 30px;
+}
+
+.input {
+    padding: 5px 15px 5px 15px;
+    border-radius: 15px;
+    border: none;
+}
+
+.label {
+    font-weight: bold;
+    color: white;
+    padding-top: 0;
+    padding-left: 0;
+    letter-spacing: .025em;
+    font-size: 1.125em;
+    line-height: 1.25;
+    position: relative;
+    z-index: 100; }
+
+form {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-end; 
+}
+
+form > .reset {
+    margin-left: 5px;
+}
+
+#btnSubmit {
+    padding: 5px 15px 5px 15px;
+    border-radius: 15px;
+}
+
+#btnReset {
+    padding: 5px 15px 5px 15px;
+    border-radius: 15px;
+}
