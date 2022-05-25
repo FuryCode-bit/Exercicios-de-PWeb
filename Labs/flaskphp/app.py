@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 app.secret_key = 'Python > PHP'
 app.config['SESSION_TYPE'] = 'filesystem'
-app.config['MYSQL_UNIX_SOCKET'] = 'TCP'
+
 
 class City:
     def __init__(self, nome, pais, continente):
